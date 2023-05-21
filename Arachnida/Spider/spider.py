@@ -64,7 +64,7 @@ def change_url(url_base, url, level, arg_level, directory):
 parser = argparse.ArgumentParser()
 parser.add_argument('url', help="the URL of the website")
 parser.add_argument('-r', '--recursive', action='store_true')
-parser.add_argument('-l', '--level', type=int, default=5, choices=range(1, 5), help='the level of depth')
+parser.add_argument('-l', '--level', type=int, default=5, choices=range(1, 6), help='the level of depth')
 parser.add_argument('-p', '--path', default='./data', help='the name of the directory')
 args = parser.parse_args()
 level = 1
